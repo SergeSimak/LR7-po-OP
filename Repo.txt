@@ -1,0 +1,37 @@
+#include"iostream"
+#include"windows.h"
+#include"math.h"
+#include"func.h"
+#define M_Pi 3.14159265358979323846
+using namespace std;
+
+float a(float x, float y) {
+	float a;
+	if ((pow(x, 1./ 3) + 1) != 0)
+	{
+		a = (exp(3) + pow(x, 2) + (4 / y)) / (pow(x, 1 / 3) + 1) / (pow(x, 2) + 4);
+	}
+	else {
+		cout << "error";
+	}
+	return a;
+}
+
+float b(float x, float z)
+{
+	float b;
+	b = ((10 * x + cos(135 * M_Pi / 180)) / ((pow(x, 4) / 2) + pow(sin(pow(z, 3)), 2))) - tan(3 * M_Pi / 2);
+	return b;
+}
+float c(float a, float b)
+{
+	float c;
+	if (a > b) {
+		c = a;
+	}
+	else {
+		c = b;
+	}
+	return c;
+}
+
